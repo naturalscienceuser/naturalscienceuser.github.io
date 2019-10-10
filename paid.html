@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Paid GIS Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			img {
+				max-height:100%;
+				max-width:100%;
+			}
+			h2, h4 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Joseph McGlynn</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Academic GIS Maps</a></li>
+							<li class="active"><a href="paid.html">Paid Projects</a></li>
+							<li><a href="writing.html">Academic Writing</a></li>
+							<li><a href="passion.html">Passion Projects</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Independent Paid Projects</h1>
+								</header>
+								<p style="text-align: center;"><b>Includes projects I undertook for various clients on the website "<a href=www.fiverr.com>Fiverr</a>"</b></p>
+								<hr>
+								<h2>New York City/New Jersey Stylized Map</h2>
+								<a href="images/NYC_and_NJ.png" target="_blank"><img src="images/NYC_and_NJ.png"></a>
+								<p>For one client, I created a stylized map of New Jersey and New York City. It was meant to resemble <a href="https://www.shutterstock.com/image-vector/map-manhattan-parts-bronx-queens-brooklyn-1105790402?src=JCbWpio_MCT178MUfLiCJQ-1-74">This map</a> as closely as possible, and to fit within certain dimensions. I think it turned out quite nicely. Click the map to see the full size version.</p>
+								<hr>
+								<h2>Raster Sampling Script</h2>
+								<p>One of my independent paid projects involved making a script which output a table in which each row would represent a single raster cell, and the columns would contain the value of that cell and its latitude and longitude. This required converting the raster layer to points and adding x and y data to the attribute table. Furthermore, the tool also includes the option to change noData values to a user-specified value. This tool was saved as a Python toolbox (.pyt file)</p>
+								<ul class="actions special">
+									<li><a href="fiverr_scripts/raster_sampling.pyt" target="_blank" class="button">View Code</a></li>
+								</ul>
+								<hr>
+								<h2>Export to Feature Dataset Script</h2>
+								<p>This independent paid project involved making a script that exported shapefiles to a feature dataset, created a new field, and then populated that field with an expression that concatenated two other fields. Finally, it renames the feature class so as to have a distinct name from the shapefile. As per the client's request, this particular script contains a lot of comments, so it should be very easy to understand what it is doing. Like the previous script, this script is also a Python toolbox.</p>
+								<ul class="actions special">
+									<li><a href="fiverr_scripts/feature_dataset_script.pyt" target="_blank" class="button">View Code</a></li>
+								</ul>
+								<hr>
+								<h2>2D:3D Area Ratio Script</h2>
+								<p>The area of a sloping pixel is not the same size as one that lies flat--a sloped pixel occupies more area than a flat one. For this project, I wrote a script which computes the ratio of 2D area (in other words, area not accounting for slope) to 3D area (area when slope is accounted for) for a given Digital Elevation Model (DEM). Rather than calculate the ratio for every cell in the DEM, the client (presumably to save time) specified that the script should instead take the mean, minimum, and maximum slope of every 5x5 cell section of the raster, calculate 2D:3D area ratios based off of those values, and put them into seperate lists--in other words, one list for minimum slope area ratios, one for mean slope area ratios, and one for maximum slope area ratios. Writing this tool involved converting the DEM to a slope raster and then converting that to a numpy array. This allowed for very flexible and fast calculations. One of the challenges with this script was dealing with the noData values that occured on the margins of the raster. In the end I found a way to ignore these. This particular script does not output anything, because the client had plans to modify it further afterward to create his own output.</p>
+								<ul class="actions special">
+									<li><a href="fiverr_scripts/2d_3d_ratio.py" target="_blank" class="button">View Code</a></li>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>10 Pheasant Hill Road<br />
+								Weston, CT 06883</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="tel:2039639525">(203) 963-9525</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:josephmcglynn96@gmail.com">josephmcglynn96@gmail.com</a></p>
+							</section>
+							<section>
+								<ul class="actions special">
+									<li><a href="https://drive.google.com/open?id=1shHKU3VaBgDfKTGdhYVD45GPADpnheuZ" target="_blank" class="button">Resume</a></li>
+									<li><div style="height:3rem; width:auto;"><a href="https://www.linkedin.com/in/joseph-mcglynn-a5ab3a164/" target="_blank"><img src="images/linkedin.png"></div></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
