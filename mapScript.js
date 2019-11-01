@@ -10,7 +10,7 @@ function getCategories() {
 	const http = new XMLHttpRequest();
 	const url = `https://www.speedrun.com/api/v1/games?name=${game}&embed=categories&max=200`
 	http.open("GET", url);
-	http.setRequestHeader('Access-Control-Allow-Origin', '*');
+	//http.setRequestHeader("Access-Control-Allow-Origin", "*");
 	http.send();
 
 	http.onreadystatechange = function() {
@@ -1113,7 +1113,7 @@ function getLocationData() {
 	function sendRequest(){
 		http = new XMLHttpRequest();
 		http.open("GET", runsUrl);
-		http.setRequestHeader('Access-Control-Allow-Origin', '*');
+		//http.setRequestHeader('Access-Control-Allow-Origin', '*');
 		http.onreadystatechange = handleResponse
 		http.send();
 	}
