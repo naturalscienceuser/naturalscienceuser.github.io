@@ -55,6 +55,13 @@
 								<a href="images/NYC_and_NJ.png" target="_blank"><img src="images/NYC_and_NJ.png"></a>
 								<p>For one client, I created a stylized map of New Jersey and New York City. It was meant to resemble <a href="https://www.shutterstock.com/image-vector/map-manhattan-parts-bronx-queens-brooklyn-1105790402?src=JCbWpio_MCT178MUfLiCJQ-1-74">This map</a> as closely as possible, and to fit within certain dimensions. I think it turned out quite nicely. Click the map to see the full size version.</p>
 								<hr>
+                                <h2>Windmill Construction Suitability Analysis</h2>
+                                <a href="images/windmill_tool.png" target="_blank"><img src="images/windmill_tool.png"></a>
+                                <p>An ArcGIS Python tool that finds areas where windmills cannot be legally built (based on zoning restrictions). It takes in a project area layer and any number of input layers, reprojects all of them, and then buffers the input layers based on certain criteria. The user can specify the buffer distance for each input layer, or they can input the type of the buffer layer and the tool will buffer based on dimensions of the windmill--for example, a layer of the type "County Roads" would be buffered by a multiplier of 1.1 times the windmill tip height, which was based off of zoning laws in the client's area. The multiplier can be customized as well. Once all the input layers are buffered, the buffers are merged into one layer, and are used to erase parts of the project area, so that the remaining shapefile contains only areas that are legally suitable for windmill construction.</p>
+                                <ul class="actions special">
+                                    <li><a href="fiverr_scripts/Clip_Unsuitable_Areas.pyt" target="_blank" class="button">View Code</a></li>
+                                </ul>
+                                <hr>
 								<h2>African Language Areas Map</h2>
 								<a href="images/africa4.png" target="_blank"><img src="images/africa4.png"></a>
 								<p>This is a map I made for someone studying languages in Africa. The idea was to show the location of the two language areas of interest (Xhosa and Nyakyusa) along with the study sites Mbeya and Makhanda and major cities and lakes for reference. The resulting map was simple, but functional. I drew the language area polygons based off of another map, which was something of a change of pace for me--most of my projects don't involve much vector editing.</p>
