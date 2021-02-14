@@ -19,7 +19,7 @@ function getCategories() {
 			const gameData = gameResponse.data[0]
 			gameID = gameData.id
 			const gameName = gameData.names.international
-			document.getElementById("confirmGame").innerHTML = `Acquired data for game: ${gameName}.<br><br>Please pick a category.`
+			document.getElementById("confirmGame").innerHTML = `Acquired data for game: ${gameName}.<br><br><b>Please pick a category.</b>`
 			categoryObjectList = gameData.categories.data
 			categoryDropDown = document.getElementById("categoriesDropDown")
 			categoryIndexes = {}
@@ -1096,7 +1096,7 @@ function getLocationData() {
 					else {
 							mapButton = document.getElementById("mapButton")
 							mapButton.style.display = "inline-block"
-							document.getElementById("pleaseWait").innerHTML = "Ready to make your map!"
+							document.getElementById("pleaseWait").innerHTML = "<b>Ready to make your map!</b>"
 							return
 					}
 				}
@@ -1104,7 +1104,7 @@ function getLocationData() {
 			else { //in the event that there are few enough runs that they all fit on 1 page, we can return
 					mapButton = document.getElementById("mapButton")
 					mapButton.style.display = "inline-block"
-					document.getElementById("pleaseWait").innerHTML = "Ready to make your map!"
+					document.getElementById("pleaseWait").innerHTML = "<b>Ready to make your map!</b>"
 					return
 			}
 		}	
